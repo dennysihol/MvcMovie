@@ -9,6 +9,8 @@ builder.Services.AddDbContext<MvcMovieContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Add Validation Services
+builder.Services.AddValidation();
 
 var app = builder.Build();
 
